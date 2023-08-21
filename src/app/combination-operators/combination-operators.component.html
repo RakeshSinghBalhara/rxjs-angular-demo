@@ -1,0 +1,33 @@
+<h2>Combination Operators</h2>
+
+<button (click)="applyCombineLatest()">Apply combineLatest</button>
+<button (click)="applyConcat()">Apply concat</button>
+<button (click)="applyMerge()">Apply merge</button>
+<button (click)="applyRace()">Apply race</button>
+<button (click)="applyStartWith()">Apply startWith</button>
+<button (click)="applyWithLatestFrom()">Apply withLatestFrom</button>
+<button (click)="applyZip()">Apply zip</button>
+
+<div *ngIf="results !== null">
+  <p *ngIf="results.combineLatest !== undefined">
+    combineLatest: {{ results.combineLatest }}
+  </p>
+  <p *ngIf="results.concat !== undefined">
+    concat: {{ results.concat }}
+  </p>
+  <p *ngIf="results.merge !== undefined">
+    merge: {{ results.merge }}
+  </p>
+  <p *ngIf="results.race !== undefined">
+    race: {{ results.race }}
+  </p>
+  <p *ngIf="results.startWith !== undefined">
+    startWith: {{ results.startWith }}
+  </p>
+  <p *ngIf="results.withLatestFrom !== undefined">
+    withLatestFrom: {{ results.withLatestFrom }}
+  </p>
+  <p *ngIf="results.zip !== undefined">
+    zip: {{ results.zip }}
+  </p>
+</div>

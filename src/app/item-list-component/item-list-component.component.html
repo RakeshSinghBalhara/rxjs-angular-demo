@@ -1,0 +1,50 @@
+<h2>Item List</h2>
+
+<button (click)="applyMap()">Apply Map</button>
+<button (click)="applyFilter()">Apply Filter</button>
+<button (click)="applyPluck()">Apply Pluck</button>
+<button (click)="reset()">Reset</button>
+<button (click)="applyConcatMap()">Apply ConcatMap</button>
+<button (click)="applyConcatMapTo()">Apply ConcatMapTo</button>
+<button (click)="applyMergeMap()">Apply MergeMap</button>
+<button (click)="applyMergeMapTo()">Apply MergeMapTo</button>
+
+<ul>
+  <li *ngFor="let item of items$ | async">
+    {{ item.name }} - Price: {{ item.price | currency }}
+  </li>
+</ul>
+<br>
+<br>
+<button (click)="emitValue()">Emit Values</button>
+<p>Size {{emittedValues.length}}</p>
+<p *ngIf="emittedValues.length > 0">Emitted Values:</p>
+<ul>
+  <li *ngFor="let value of emittedValues">
+    {{ value }}
+  </li>
+</ul>
+
+<br>
+<br>
+<button (click)="timerValue()">Timer Values</button>
+
+<br>
+<br>
+<h2>Item List</h2>
+
+<button (click)="applyDefaultIfEmpty()">Apply defaultIfEmpty</button>
+<button (click)="applyEvery()">Apply every</button>
+<button (click)="applySequenceEqual()">Apply sequenceEqual</button>
+
+<div *ngIf="results !== null">
+  <p *ngIf="results.defaultIfEmpty !== undefined">
+    defaultIfEmpty: {{ results.defaultIfEmpty }}
+  </p>
+  <p *ngIf="results.every !== undefined">
+    every: {{ results.every }}
+  </p>
+  <p *ngIf="results.sequenceEqual !== undefined">
+    sequenceEqual: {{ results.sequenceEqual }}
+  </p>
+</div>

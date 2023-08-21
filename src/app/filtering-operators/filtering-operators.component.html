@@ -1,0 +1,22 @@
+<h2>Filtering Operators</h2>
+
+<button (click)="applyDebounceTime()">Apply debounceTime</button>
+<button (click)="applyDistinctUntilChanged()">Apply distinctUntilChanged</button>
+<button (click)="applyFilter()">Apply filter</button>
+<button (click)="applyElementAt()">Apply elementAt</button>
+<button (click)="applyFind()">Apply find</button>
+<button (click)="applyFirst()">Apply first</button>
+<button (click)="applyLast()">Apply last</button>
+<button (click)="applySkip()">Apply skip</button>
+<button (click)="applySkipUntil()">Apply skipUntil</button>
+<button (click)="applySkipWhile()">Apply skipWhile</button>
+<button (click)="applyTake()">Apply take</button>
+<button (click)="applyTakeUntil()">Apply takeUntil</button>
+<button (click)="applyTakeWhile()">Apply takeWhile</button>
+<button (click)="applyThrottleTime()">Apply throttleTime</button>
+<button (click)="applySample()">Apply sample</button>
+<button (click)="applyIgnoreElements()">Apply ignoreElements</button>
+
+<div *ngIf="result !== undefined">
+  <p>{{ result }}</p>
+</div>
