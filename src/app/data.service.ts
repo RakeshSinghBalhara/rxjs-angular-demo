@@ -10,9 +10,11 @@ export class DataService {
     new Item(1, 'Item 1', 50),
     new Item(2, 'Item 2', 75),
     new Item(3, 'Item 3', 100),
+    new Item(4, 'Item 4', 120),
+    new Item(5, 'Item 5', 90),
   ];
 
-  private userIds = [1, 2, 3];
+  private userIds = [1, 2, 3, 45];
 
   getItems(): Observable<Item[]> {
     return of(this.items);
